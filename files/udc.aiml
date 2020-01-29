@@ -1,7 +1,158 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
+    
   <category>
     <pattern>*</pattern>
-    <template>I have no answer for that.</template>
+    <template>Hi, I am Nick the IT Career Finding Bot. I particularly focus on those pursuant of a Computer Science Job! Please say Start to begin!</template>
   </category>
+  
+  <category>
+    <pattern>Start</pattern>
+    <template>Ok, Let's get started, are you more into the Hardware side of IT or Software side of IT?</template>
+  </category>
+  
+  <category>
+    <pattern>* software *</pattern>
+    <template>
+        <think><set name = "track"> software</set></think>
+        Good, I really like software people, myself. Speaking of people, are you a people person?</template>
+  </category>
+  <category>
+    <pattern>software</pattern>
+    <template>
+        <think><set name = "track"> software</set></think>
+        Good, I really like software people, myself. Speaking of people, are you a people person?</template>
+  </category>
+  <category>
+    <pattern>software *</pattern>
+    <template>
+        <think><set name = "track"> software</set></think>
+        Good, I really like software people, myself. Speaking of people, are you a people person?</template>
+  </category>
+   <category>
+    <pattern>* software</pattern>
+    <template>
+        <think><set name = "track"> software</set></think>
+        Good, I really like software people, myself. Speaking of people, are you a people person?</template>
+  </category>
+  
+<category>
+    <pattern>* hardware *</pattern>
+    <template>
+        <think><set name = "track"> hardware</set></think>
+        Good, I really like hardware people, myself. Speaking of people, are you a people person?</template>
+  </category>
+  <category>
+    <pattern>hardware</pattern>
+    <template>
+        <think><set name = "track"> hardware</set></think>
+        Good, I really like hardware people, myself. Speaking of people, are you a people person?</template>
+  </category>
+  <category>
+    <pattern>hardware *</pattern>
+    <template>
+        <think><set name = "track"> hardware</set></think>
+        Good, I really like hardware people, myself. Speaking of people, are you a people person?</template>
+  </category>
+   <category>
+    <pattern>* hardware</pattern>
+    <template>
+        <think><set name = "track"> hardware</set></think>
+        Good, I really like hardware people, myself. Speaking of people, are you a people person?</template>
+  </category>
+  
+  <category>
+    <pattern>Yes</pattern>
+     <template>
+     <think><set name = "people_person"> Yes</set></think>
+     <condition name = "people_person" value = "Yes">
+     <condition name = "track" value = "software">
+        Computer Systems Analyst would fit you well because you were work directly with people and management on software and harware solutions!
+   </condition></condition>
+     <condition name = "people_person" value = "Yes">
+     <condition name = "track" value = "hardware">
+     Computer Systems Analyst would fit you well because you were work directly with people and management on software and harware solutions!    
+    
+     </condition></condition>
+    </template>
+  </category>
+  
+   <category>
+    <pattern>No</pattern>
+     <template>
+     <think><set name = "people_person"> No</set></think>
+     <condition name = "people_person" value = "No">
+     <condition name = "track" value = "software">
+        Do you like working with data, application, or web design?
+   </condition></condition>
+     <condition name = "people_person" value = "No">
+     <condition name = "track" value = "hardware">
+     Computer Hardware Engineer sounds like the perfect job with you. You will design different computer components and electronic boards!!
+    
+     </condition></condition>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>web *</pattern>
+    <template>A Web Developer Sounds like the perfect job for you!</template>
+  </category>
+  
+  <category>
+    <pattern>* web *</pattern>
+    <template>A Web Developer Sounds like the perfect job for you!</template>
+  </category>
+  
+   <category>
+    <pattern>web</pattern>
+    <template>A Web Developer Sounds like the perfect job for you!</template>
+  </category>
+  
+    <category>
+    <pattern>application *</pattern>
+    <template>A Software Developer Sounds like the perfect job for you!</template>
+  </category>
+  
+  <category>
+    <pattern>* application *</pattern>
+    <template>A Software Developer Sounds like the perfect job for you!</template>
+  </category>
+  
+   <category>
+    <pattern>application</pattern>
+    <template>A Software Developer Sounds like the perfect job for you!</template>
+  </category>
+  
+    <category>
+    <pattern>applications *</pattern>
+    <template>A Software Developer Sounds like the perfect job for you!</template>
+  </category>
+  
+  <category>
+    <pattern>* applications *</pattern>
+    <template>A Software Developer Sounds like the perfect job for you!</template>
+  </category>
+  
+   <category>
+    <pattern>applications</pattern>
+    <template>A Software Developer Sounds like the perfect job for you!</template>
+  </category>
+  
+    <category>
+    <pattern>data *</pattern>
+    <template>A Database Administrator Sounds like the perfect job for you!</template>
+  </category>
+  
+  <category>
+    <pattern>* data *</pattern>
+    <template>A Database Administrator Sounds like the perfect job for you!</template>
+  </category>
+  
+   <category>
+    <pattern>data</pattern>
+    <template>A Database Administrator Sounds like the perfect job for you!</template>
+  </category>
+  
+  
+
 </aiml>
